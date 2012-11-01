@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.phonegap.sample1"
+	version 	= "1.0.0">
+	<icon src="icon.png" />
+	<name>GeoCanvasRadar</name>
+
+	<description>
+		A sample to showcase the use of HTML5 Geolocation along with Canvas API.
+	</description>
+    <author href="http://software.intel.com/en-us/articles/html5-geolocation-sample-with-canvas" email="">
+        Intel Corporation 
+    </author>
+    <license />
+
+	<preference name="orientation" value="portrait" />
+	<preference name="target-device" value="universal" />
+	<preference name="phonegap-version" value="2.0.0" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+	<!-- for Android -->
+    <preference name="android-minSdkVersion" value="7" />
+</widget>
