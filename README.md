@@ -7,10 +7,16 @@ The center rings become colored based on the distance the user is from the targe
 
 License Information Follows
 ---------------------------
-* index.html
+* abstract.txt
+* app.json
+* config.xml
+* dist-calculator.js
 * geocanvasradar.js
+* icon.png
+* index.html
+* screenshot.png
 
-Copyright (c) 2012, Intel Corporation
+Copyright (c) 2012, Intel Corporation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:
@@ -43,17 +49,3 @@ Cordova (PhoneGap) Library
 
 * source:  http://www.phonegap.com/
 * license:  http://www.apache.org/licenses/LICENSE-2.0.html
-
-
-IMAGES
-------
-All images and icons were created by Intel Corporation and are licensed
-under the Creative Commons Attribution 3.0 license 
-http://creativecommons.org/licenses/by/3.0/us/
-
-
-MEDIA
------
-* geocanvasradaricon.png
-
-* license:  http://creativecommons.org/licenses/by/3.0/

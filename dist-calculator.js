@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2012, Intel Corporation. All rights reserved.
+ * File revision: 04 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
 	function calc_distance(latpos1, longpos1, latpos2, longpos2) {
 		//Convert degrees to radians
 		var rad_lat1 = deg_to_rad(latpos1);
