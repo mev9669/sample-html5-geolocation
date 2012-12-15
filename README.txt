@@ -1,4 +1,4 @@
-This HTML5 application was built using the Geolocation and Canvas application 
+﻿This HTML5 application was built using the Geolocation and Canvas application 
 programming interface (API) of the HTML5 W3C specification.  This app relies on 
 JavaScript and HTML source code to create the user interface. The sample uses 
 geolocation data as a mechanism in which rendering of graphics onto a canvas 
@@ -26,8 +26,11 @@ License Information Follows
 * icon.png
 * index.html
 * screenshot.png
-* screenshot.png
 * README.md
+* LICENSE
+* license.css
+* license.js
+* README.txt
 
 Copyright (c) 2012, Intel Corporation
 

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2012, Intel Corporation
- * File revision: 04 December 2012
+ * File revision: 04 October 2012
  * Please see http://software.intel.com/html5/license/samples 
  * and the included README.md file for license terms and conditions.
  */

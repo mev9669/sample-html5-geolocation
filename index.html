@@ -21,6 +21,9 @@
 	<script src="jquery/jquery-1.8.0.min.js"></script> 
 	<script type="text/javascript" src="jquery/jquery.mobile-1.2.0.min.js"></script> 
 
+    <link rel="stylesheet" type="text/css" href="license.css" /> 
+    <script src="license.js"></script> 
+
 	<title>HTML5 Geo-Canvas Radar</title>
 
 	<style>
@@ -31,7 +34,23 @@
 			background-image: linear-gradient(top, #A0D8F1 0%, #017890 100%); 
 			background-image: -ms-linear-gradient(top, #A0D8F1 0%, #017890 100%); 
 		}
+        
+        body {
 
+            background-size: 100% 100%;
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            -webkit-box-orient: vertical;
+            position: absolute;
+            overflow: auto;
+            cursor: default;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        
 		#div_canvas {
 			width: 400px;
 		    height:400px;
@@ -74,54 +93,71 @@
 
 		td {
 			font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
-            border: 1px solid;;
+            border: 1px solid;
 		}
-	</style>
+        
+        .background {
+            background-position: center;
+        	background-repeat: no-repeat;
+            display: box;
+            box-align: center;
+            box-pack: center;
+            box-orient: vertical;
+            position: absolute;
+            cursor: default;
+            width: 100%;
+            height: 100%;
+        }
 
+	</style>
 </head>
-<body onload=widthadapter()>
-	<header data-role="header">
-		<h1>GeoCanvas Radar</h1>	
+<body onload="widthadapter()">
+    <header data-role="header" class="noBounce">
+		<h1>GeoCanvas</h1>	
 	</header>
 
-	
-	<div style="position: relative;text-align: center">
-		<a rel="LICENSE" href="http://software.intel.com/html5/license/samples" target="_blank">License Terms and Conditions</a>
-	</div>
-	
+    <div id="licensebtnl" onclick="onclickLicenseBtn()"> i </div>
 
-	<h1 id="canvas_support"> </h1>
-
-	<a id="error"> </a>	
-	<p></p>	
-
-	<div id="div_canvas">
-		<canvas id="surface" style="border: 1px solid;" width="400" height="400"> </canvas>	
-	</div>
-
-	<br>	
-		<button data-role="content" data-theme="a" id="refresh_btn" onclick="refresh_coords()">Refresh</button>
-		
-	<br>
-		<table id="geotable" class="mid_t" border="1">
-			<tr>
-				<th name="coord_plane_header">Latitude</th>
-				<th name="coord_plane_header">Longitude</th>		
-				<th name="coord_plane_header">Time</th>
-			</tr>
-			<tr>
-				<td id="latitude" align=center>?</td>
-				<td id="longitude" align=center>?</td>
-				<td id="timestamp" align=center>?</td>
-			</tr>
-		</table>	
-
-		<table id="disttable" class="mid_t" border="1">
-			<tr>
-				<td id="distn" align=center>_____ mile(s) away</td>
-			</tr>
-		</table>
-	
+    <div id="content_page" class="background" style="display:block">        
+    
+    	<a id="error"> </a>	
+    	<br> 
+    
+    	<div id="div_canvas">
+    		<canvas id="surface" style="border: 1px solid;" width="400" height="400"> </canvas>	
+    	</div>
+    
+    	<br>	
+    		<button data-role="content" data-theme="a" id="refresh_btn" onclick="refresh_coords()">Refresh</button>
+    		
+    	<br>
+    		<table id="geotable" class="mid_t" border="1">
+    			<tr>
+    				<th name="coord_plane_header">Latitude</th>
+    				<th name="coord_plane_header">Longitude</th>		
+    				<th name="coord_plane_header">Time</th>
+    			</tr>
+    			<tr>
+    				<td id="latitude" align=center>?</td>
+    				<td id="longitude" align=center>?</td>
+    				<td id="timestamp" align=center>?</td>
+    			</tr>
+    		</table>	
+    
+    		<table id="disttable" class="mid_t" border="1">
+    			<tr>
+    				<td id="distn" align=center>_____ mile(s) away</td>
+    			</tr>
+    		</table>
+    </div>
+    
+        
+    <div id="licensepage" style="display: none">
+        <div id="licensetext"></div>
+        <div id="licensebtnq" class="licensebtn" onclick="onclickLicBack()">Back</div>
+    </div>
+    
+    
 	<script src="dist-calculator.js" type="text/javascript"></script>			           
 	<script src="geocanvasradar.js" type="text/javascript"></script>			           
 

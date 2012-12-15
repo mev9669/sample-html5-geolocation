@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2012, Intel Corporation
- * File revision: 04 December 2012
+ * File revision: 04 October 2012
  * Please see http://software.intel.com/html5/license/samples 
  * and the included README.md file for license terms and conditions.
  */
@@ -31,7 +31,6 @@
 			var context = canvas.getContext('2d');
 
 			context.save();
-			
 			context.beginPath();
 			context.rect(0, 0, 200, 400); //context.rect(x, y, width, height);
 			
@@ -211,15 +210,17 @@
             var time_cell = document.getElementById("timestamp");
             var dist_cell = document.getElementById("distn");
             
+            loadLicenseTxt();
+            
 			if (screen.width < 321){
 				canvas.style.width = '170px';
     			canvas.style.height = '170px';
                 canvas_div.style.width = '170px';
                 canvas_div.style.height = '170px';                
-                lat_cell.style.font = "bold 10px/1 'helvetica neue', helvetica, arial, sans-serif";                
-                longi_cell.style.font = "bold 10px/1 'helvetica neue', helvetica, arial, sans-serif";                
-                time_cell.style.font = "bold 10px/1 'helvetica neue', helvetica, arial, sans-serif";
-                dist_cell.style.font = "bold 10px/1 'helvetica neue', helvetica, arial, sans-serif";
+                lat_cell.style.font = "bold 12px/1 'helvetica neue', helvetica, arial, sans-serif";                
+                longi_cell.style.font = "bold 12px/1 'helvetica neue', helvetica, arial, sans-serif";                
+                time_cell.style.font = "bold 12px/1 'helvetica neue', helvetica, arial, sans-serif";
+                dist_cell.style.font = "bold 12px/1 'helvetica neue', helvetica, arial, sans-serif";
                 //time_cell.style.padding = "15px";
                 //alert("width smaller than 321");
 			}		
