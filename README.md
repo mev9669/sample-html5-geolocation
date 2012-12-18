@@ -13,7 +13,7 @@ if the user is within 5 to 8 miles of the targeted longitude and latitude. The
 outer ring becomes yellow if the user is greater than 8 miles of the targeted 
 longitude and latitude. The distance away from the targeted location is also 
 presented based on the latitude and longitude coordinates.
-
+ 
 It was ported to work with PhoneGap* on Android* and iOS*.
 
 License Information Follows
