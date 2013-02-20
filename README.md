@@ -13,8 +13,15 @@ if the user is within 5 to 8 miles of the targeted longitude and latitude. The
 outer ring becomes yellow if the user is greater than 8 miles of the targeted 
 longitude and latitude. The distance away from the targeted location is also 
 presented based on the latitude and longitude coordinates.
- 
+
 It was ported to work with PhoneGap* on Android* and iOS*.
+
+Intel(R) HTML5 Development Environment Beta
+-------------------------------------------
+This sample is part of the Intel(R) HTML5 Development Environment tool. 
+Please sign up the beta at http://software.intel.com/en-us/html5.
+To see the technical detail of the sample, please visit the sample article page 
+at http://software.intel.com/en-us/articles/html5-geolocation-sample-with-canvas. 
 
 License Information Follows
 ---------------------------

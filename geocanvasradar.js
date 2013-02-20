@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) 2012, Intel Corporation
  * File revision: 04 October 2012
  * Please see http://software.intel.com/html5/license/samples 
