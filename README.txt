@@ -32,9 +32,6 @@ License Information Follows
 * geocanvasradar.js
 * icon.png
 * index.html
-* license.css
-* license.js
-* README.txt
 * screenshot.png
 * screenshot.png
 * README.md
