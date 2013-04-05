@@ -5,5 +5,5 @@
 	"description":"This HTML5 application was built using the Geolocation and Canvas API and uses geolocation data as a mechanism in which rendering of graphics onto a canvas element takes place based on the indicated relative location.",
 	"articleurl":"http://software.intel.com/en-us/articles/html5-geolocation-sample-with-canvas",
 	"categories":["Geolocation"],
-	"visible" : "true"
+	"visible" : "false"
 }
